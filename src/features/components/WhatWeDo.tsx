@@ -5,8 +5,8 @@ import Image from "next/image";
 
 function AboutAuthor() {
   return (
-      <section className=" bg-gray-50">
-          <div className="w-full md:w-[70%] mx-auto py-16 ">
+      <section className=" bg-gray-50 w-full">
+          <div className="w-full md:w-[80%] mx-auto py-16 ">
               <p className="text-4xl text-center py-4">What We Do</p>
               <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
                   {whatWeDo.map((activity) => (

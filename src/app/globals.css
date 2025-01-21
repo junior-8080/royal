@@ -3,23 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-
-}
 :root {
   /* Primary Colors */
   --primary-default: #ff7b2f;
-  --primary-secondary: #073EAC;
+  --primary-secondary: #073eac;
   --primary-tertiary: #3a3a3a;
   --primary-contrast: #eae7de;
 
   /* Accent Colors */
-  --accent-default: #FFC942;
-  --accent-secondary: #CDCDCB;
+  --accent-default: #ffc942;
+  --accent-secondary: #cdcdcb;
   --accent-tertiary: #f8c84f;
   --accent-contrast: #000000;
 
@@ -36,11 +29,10 @@
 
   /* Content Colors */
   /* --content-default: #333333; */
-    --content-default: #334054;
+  --content-default: #334054;
   --content-secondary: #666666;
   --content-tertiary: #999999;
   --content-tertiary: #ffffff;
-
 
   /* Border Colors */
   --solid-50: #fff;
@@ -51,10 +43,9 @@
   --solid-500: #606060;
 }
 
-
-
-*,body{
-  font-family: "Poppins" , serif !important;
+*,
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .elementor-shape > svg {
@@ -66,3 +57,9 @@
   transform: translateX(-50%) rotateY(180deg);
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  background-color: #00000061;
+  width: 25px !important;
+}
