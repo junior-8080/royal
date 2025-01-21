@@ -1,0 +1,68 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+
+}
+:root {
+  /* Primary Colors */
+  --primary-default: #ff7b2f;
+  --primary-secondary: #073EAC;
+  --primary-tertiary: #3a3a3a;
+  --primary-contrast: #eae7de;
+
+  /* Accent Colors */
+  --accent-default: #FFC942;
+  --accent-secondary: #CDCDCB;
+  --accent-tertiary: #f8c84f;
+  --accent-contrast: #000000;
+
+  /* Light Colors */
+  --light-default: #c2dcef;
+  --light-secondary: #dbe9fc;
+  --light-tertiary: #f5ffff;
+  --light-contrast: #095ea6;
+
+  /* Surface Colors */
+  --surface-default: #ffffff;
+  --surface-secondary: #f9fafa;
+  --surface-tertiary: #999999;
+
+  /* Content Colors */
+  /* --content-default: #333333; */
+    --content-default: #334054;
+  --content-secondary: #666666;
+  --content-tertiary: #999999;
+  --content-tertiary: #ffffff;
+
+
+  /* Border Colors */
+  --solid-50: #fff;
+  --solid-100: #e0e0e0;
+  --solid-200: #c0c0c0;
+  --solid-300: #a0a0a0;
+  --solid-400: #808080;
+  --solid-500: #606060;
+}
+
+
+
+*,body{
+  font-family: "Poppins" , serif !important;
+}
+
+.elementor-shape > svg {
+  display: block;
+  left: 50%;
+  position: relative;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  transform: translateX(-50%) rotateY(180deg);
+}
+
