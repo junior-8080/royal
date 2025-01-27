@@ -40,13 +40,13 @@ const HeroBanner = () => {
                 {/*<button className="bg-orange-500 border-none hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-md w-fit transition-colors">*/}
                 {/*  {slide.buttonText}*/}
                 {/*</button>*/}
-                  <Button text={slide.buttonText} className="bg-primary-default border-none  text-white font-bold w-fit transition-colors rounded-md" size="sm"/>
+                  <Button text={slide.buttonText} className="bg-primary-default border-none  text-white font-bold w-fit transition-colors rounded-2xl" size="sm"/>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute bottom-0 z-10 w-full">
+      <div className="absolute bottom-0 z-10 w-full hidden md:block">
         <img
           src="/svgs/waves.svg"
           alt=""

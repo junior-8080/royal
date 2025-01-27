@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 const LandAquisition = () => {
     return (
-        <div className="flex  my-10 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row pl-4 md:pl-0 my-5 md:my-10 md:max-w-6xl mx-auto">
             <div className="w-full md:w-[30%]">
                 <div className="my-4">
                     <h2 className="text-xl font-bold">Available Lands</h2>

@@ -45,14 +45,14 @@ function GeneralService({currentService}: Props) {
                 <div></div>
             </div>
             <div
-                className="bg-[#000] bg-opacity-55  grid grid-flow-col py-16 px-8 content-center items-center text-center w-full text-white">
+                className="bg-[#000] bg-opacity-55  justify-center  grid grid-cols-2 md:rid-flow-col py-6 md:py-16 md:px-8 content-center items-center text-center w-full text-white">
                 {currentService?.stats &&
                     currentService.stats?.map((stat, index) => (
                         <div key={stat.title}>
-                            <h2 className="text-6xl mx-0 font-bold" ref={ref}>
+                            <h2 className="md:text-6xl mx-0 font-bold" ref={ref}>
                                 {`${useScrollTriggeredCountUp(ref, stat.count)}+`}
                             </h2>
-                            <p className="text-base uppercase">{stat.title}</p>
+                            <p className="md:text-base uppercase">{stat.title}</p>
                         </div>
                     ))}
             </div>
@@ -67,7 +67,7 @@ function GeneralService({currentService}: Props) {
             >
                 <div className=" flex-1 flex items-center text-center justify-center">
                     <button
-                        className="bg-[#FF7B2F] text-white p-2 text-bold rounded-xl flex gap-2 items-center justify-center">
+                        className="bg-[#FF7B2F] text-white my-3 p-2 text-bold rounded-xl flex gap-2 items-center justify-center">
                         <FaEnvelope/>
                         <span> Contact Us</span>
                     </button>

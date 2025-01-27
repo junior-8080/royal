@@ -1,9 +1,16 @@
+import { Poppins, Roboto } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily:{
+        Roboto: ["Roboto", "--font-roboto"],
+        Poppins: ["Popins", "--font-poppins"],
+
+
+      },
       colors: {
         primary: {
           default: 'var(--primary-default)',
